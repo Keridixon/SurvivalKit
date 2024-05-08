@@ -1,0 +1,118 @@
+body {
+    font-family: 'Copse', sans-serif;
+    margin: 0;
+    padding: 0;
+   background-image: url('images/background.jpg');
+   background-size: cover;
+   background-position: center;
+   color: #6a0dad;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.content {
+    max-width: 50%;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.image-container {
+    max-width: 40%; /* Decreased to allow more space between image and text */
+    margin-right: 40px; /* Increased margin for space */
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.contact-form {
+    width: 70%; /* Increase width of the contact form */
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center the contact form */
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Copse', sans-serif;
+    text-align: center;
+    color: teal; /* Set color of the title to teal */
+}
+
+.subtitle {
+    font-family: 'Delve-Hand', sans-serif;
+    text-align: center;
+    color: #6a0dad; /* Set color of the subtitle to dark purple */
+}
+
+svg {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Align navigation to the right */
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px; /* Add padding to improve clickability */
+    border: 2px solid #000; /* Add border box around each nav tab */
+    border-radius: 10px; /* Add rounded edges */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #6a0dad; /* Change background color on hover to dark purple */
+}
+
+nav ul li a:active {
+    color: #fff; /* Change text color on click */
+    background-color: #492a71; /* Change background color on click */
+}
+
+
+
