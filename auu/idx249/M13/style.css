@@ -2,10 +2,10 @@ body {
     font-family: 'Copse', sans-serif;
     margin: 0;
     padding: 0;
-   background-image: url('images/background.jpg');
-   background-size: cover;
-   background-position: center;
-   color: #6a0dad;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #6a0dad;
 }
 
 .container {
@@ -23,18 +23,25 @@ body {
 }
 
 .image-container {
-    max-width: 40%; /* Decreased to allow more space between image and text */
-    margin-right: 40px; /* Increased margin for space */
+    max-width: 40%;
+    margin-right: 40px;
 }
 
 .image-container img {
     max-width: 100%;
+    transition: filter 0.3s ease; /* Added transition for smooth effect */
+}
+
+/* CSS for hover effect */
+.image-container img:hover {
+    filter: brightness(80%);
+    background-color: #6a0dad;
 }
 
 .contact-form {
-    width: 70%; /* Increase width of the contact form */
-    max-width: 800px; /* Set maximum width */
-    margin: 0 auto; /* Center the contact form */
+    width: 70%;
+    max-width: 800px;
+    margin-right: 20px; /* Adjusted margin to push it to the right */
     padding: 20px;
     border: 2px solid #000;
     background-color: #fff;
@@ -59,22 +66,18 @@ footer {
 .title {
     font-family: 'Copse', sans-serif;
     text-align: center;
-    color: teal; /* Set color of the title to teal */
+    color: teal;
 }
 
 .subtitle {
     font-family: 'Delve-Hand', sans-serif;
     text-align: center;
-    color: #6a0dad; /* Set color of the subtitle to dark purple */
-}
-
-svg {
-    max-width: 100%;
+    color: #6a0dad;
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Align navigation to the right */
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
@@ -99,20 +102,41 @@ nav ul li a {
     font-weight: bold;
     font-size: 18px;
     display: block;
-    padding: 10px 20px; /* Add padding to improve clickability */
-    border: 2px solid #000; /* Add border box around each nav tab */
-    border-radius: 10px; /* Add rounded edges */
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
 
 nav ul li a:hover {
-    color: #fff; /* Change text color on hover */
-    background-color: #6a0dad; /* Change background color on hover to dark purple */
+    color: #fff;
+    background-color: #6a0dad;
 }
 
 nav ul li a:active {
-    color: #fff; /* Change text color on click */
-    background-color: #492a71; /* Change background color on click */
+    color: #fff;
+    background-color: #492a71;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse; /* Reverse the flex direction on smaller screens */
+        align-items: stretch;
+    }
 
+    .image-container {
+        max-width: 100%; /* Take full width on smaller screens */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    .content,
+    .contact-form {
+        max-width: 100%; /* Take full width on smaller screens */
+    }
+
+    .content,
+    .contact-form {
+        margin-right: 0; /* Remove right margin */
+    }
+}
 
